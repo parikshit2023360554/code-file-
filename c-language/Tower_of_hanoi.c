@@ -2,12 +2,12 @@
 
 void Tower(int n,char from,char to,char help){
     if(n==1){
-        printf("%c > %c",from,to);
+        printf("%c > %c \n",from,to);
     }
     else{
         // calling the tower in its own function
         Tower(n-1,from,help,to);
-        printf("%c > %c",from,to);
+        printf("%c > %c \n",from,to);
         Tower(n-1,help,to,from);
     }
 }
