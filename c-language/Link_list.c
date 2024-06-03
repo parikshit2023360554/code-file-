@@ -61,7 +61,7 @@ struct node *Insert_last(struct node *start,int data){
     return start;
 }
 
-struct node *Insert_specific(struct node *start,int data,int position){
+struct node *Insert_Specific(struct node *start,int data,int position){
     struct node *ptr=createnode();
     struct node *p=start;
     for(int i=1;i<position-1 && p!=NULL;i++){
