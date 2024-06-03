@@ -49,3 +49,42 @@ struct node *Insert_First(struct node *start,int data){
     return start;
 }
 
+struct node *Insert_last(struct node *start,int data){
+    struct node *ptr=createnode();
+    struct node *p=start;
+    while(p->link!=NULL){
+        p=p->link;
+    }
+    ptr->data=data;
+    p->link=ptr;
+    ptr->link=NULL;
+    return start;
+}
+
+struct node *Insert_specific(struct node *start,int data,int position){
+    struct node *ptr=createnode();
+    struct node *p=start;
+    for(int i=1;i<position-1 && p!=NULL;i++){
+        p=p->link;
+    if(p==NULL){
+        printf("Invalid position\n");
+        return start;
+    }
+    ptr->data=data;
+    ptr->link=p->link;
+    p->link=ptr;
+    return start;
+    }
+}
+
+struct node *Delete_First(struct node *start){
+    if(start==NULL){
+        printf("List is empty \n");
+    }
+    else{
+        struct node *temp=start;
+        start=start->link;
+        free(temp);
+    }
+    return start;
+}
