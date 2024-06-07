@@ -88,5 +88,43 @@ struct node *Delete_First(struct node *start){
     }
     return start;
 }
+struct node *Delete_Last(struct node *start){
+    if(start==NULL){
+        printf("List is empty \n");
+    }
+    else if (start->link==NULL){
+            free(start);
+    }
+    else{
+        struct node *p=start;
+        while(p->link->link!=NULL){
+            p=p->link;
+        }
+        free(p->link);
+        p->link=NULL;
+    }
+    return start;
+        
+}
 
-
+struct node *Delete_Specific(struct node *start,int position){
+    struct node *temp;
+    if(position==1){
+        start=Delete_First(start);
+    }
+    else{
+        struct node *p=start;
+        for(int i=1;i<position-1 && p!=NULL;i++){
+            p=p->link;
+        }
+        if(p==NULL || p->link==NULL){
+            printf("Invalid position \n");
+        }
+        else{
+            temp=p->link;
+            p->link=temp->link;
+            free(temp);
+        }
+    }
+    return start;
+}
