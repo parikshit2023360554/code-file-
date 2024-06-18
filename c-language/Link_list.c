@@ -125,6 +125,7 @@ struct node *Delete_Specific(struct node *start,int position){
             p->link=temp->link;
             free(temp);
         }
+        
     }
-    return start;
+    return 0;
 }
