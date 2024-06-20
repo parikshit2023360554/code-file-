@@ -18,7 +18,6 @@ class bus(vehicle):
     def seating_capacity(self,capacity=50):
         return super().seating_capacity(capacity=50)
     
-    
 
 #define a class atribute color with a default value white every vehical should white
 
@@ -32,9 +31,12 @@ class vehicle:
 class bus(vehicle):
     pass
 
-
 class car(vehicle):
     pass
 
 school_bus = bus("school volvo",180,12)
 print(school_bus.color, school_bus.name, "speed: " ,school_bus.max_speed,"mileage: ",school_bus.mileage)
+
+
+#create a bus child class that inherit from vehicle class. the default fare 
+
