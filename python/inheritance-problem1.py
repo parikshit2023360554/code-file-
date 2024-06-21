@@ -39,4 +39,7 @@ print(school_bus.color, school_bus.name, "speed: " ,school_bus.max_speed,"mileag
 
 
 #create a bus child class that inherit from vehicle class. the default fare 
-
+a="parikshit"
+c=iter(a)
+print(next(c))
+print(next(c))
