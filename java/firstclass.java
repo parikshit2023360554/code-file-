@@ -9,6 +9,7 @@ class firstclass{
         System.out.print("hello worl");
         System.out.println("hello i am using the java");
 
+
         //INPUT IN JAVA 
         Scanner sc= new Scanner(System.in);
         System.out.println("enter the name");
@@ -18,7 +19,10 @@ class firstclass{
         Scanner sr = new Scanner(System.in);
         System.out.println("enter the age");
         int a= sr.nextInt();
-        
+        // using nextline to use string and int into a same scanner class
+        sr.nextLine();
+        String b = sr.next();
+        System.out.println("string is " + b);
         System.out.println("the "+name+" age is "+a);
 
 
