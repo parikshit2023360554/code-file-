@@ -1,5 +1,5 @@
 import java.util.*;
-public class function {
+public class functionIntro {
     public static void printMyName(String name){
         System.out.println(name="Welcome to the function");
         return;
@@ -11,13 +11,22 @@ public class function {
     }
     public static void main(String arg[]){
         Scanner scan = new Scanner(System.in);
+
+
         System.out.println("enter your name");
         String name= scan.nextLine();
+
+        //caling print function
         printMyName(name);
+
+
         System.out.println("enter your first element");
-        System.out.println("enter your sec element");
         int firstVal=scan.nextInt();
+
+        System.out.println("enter your sec element");
         int secVal =scan.nextInt();
+               
+        //storing the return value of the calculate in sum 
 
         int sum= calculateSum(firstVal, secVal);
         System.out.println("the sum is "+sum);
