@@ -1,0 +1,91 @@
+programing language - major application - dos/win/web/android/destributed application 
+java - 1989 start working in USA by green team 
+green tog was its first name 
+1990 - rename with oak 
+1991 - finally it gave a name java
+--------------------------------
+why it is called java?
+james bosling in 1991 java a place in indonasia where one coffie was planted was named while drinking 
+
+The language was initially called Oak after an oak tree that stood outside Gosling's office. 
+Later the project went by the name Green and was finally renamed Java, from Java coffee, a type of coffee from Indonesia.
+
+--------------------------------
+
+version - 1995 1st version was release 
+lts version - 8,11,17,21 
+
+features:
+- it is very simple language 
+- it is more secure
+- it is very much "robust" 
+- it can be run in any platform ( platform independent WORA)
+- multithreaded language ( can break big problem into sub program)
+
+---------------------------------
+
+difference between c/c++ and java
+
+
+c/c++                                                             java 
+-------------------------------------------------------------------------------------------------------------
+
+save as .c/.cpp                                                .java 
+
+header file                                                    packages 
+
+
+c is a procedural language and 
+c++ is object oriented(partially)                              java is also object oriented(fully)
+
+
+pointer in c                                                   no possible 
+void main()                                                    public satic void main(string args[])
+
+in c we use function                                           in java we use method
+
+
+-----methods---------function--------------
+when we define the function inside the class it is methods 
+and 
+when we define the function outside the class it is function 
+
+
+------------------------------
+types of methods in java 
+1. inbuilt funcion 
+2. user define function 
+
+
+------------------------------ 
+
+how to run in notepad
+
+javac <file name> enter 
+java <class name> enter 
+output 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
