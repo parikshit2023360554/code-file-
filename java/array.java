@@ -12,8 +12,7 @@ class array
 		for(int i=0; i<size; i++)
 		{
 			System.out.println("enter the no to add in array");
-			int input=sc.nextInt();
-			marks[i]=input;
+			marks[i]= sc.nextInt();
 		}
 		for(int i=0;i<size;i++)
 		{
