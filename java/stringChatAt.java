@@ -10,7 +10,7 @@ class stringChatAt
 		String aph1 = "parikshit";
 		String aph2 = "hello";
 		
-		if(aph1.compareTO(aph2)== 0)
+		if(aph1.compareTO(aph2)==0)
 		{
 			System.out.println("both the sentance are equal");
 		}
