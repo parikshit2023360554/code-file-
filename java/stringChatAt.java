@@ -4,21 +4,19 @@ class stringChatAt
 	public static void main(String args[])
 	{
 		Scanner scan = new Scanner(System.in);
-		
-		//comparing the string 
+		String line1 = scan.nextLine();
 
-		String aph1 = "parikshit";
-		String aph2 = "hello";
-		
-		if(aph1.compareTO(aph2)==0)
-		{
-			System.out.println("both the sentance are equal");
+
+		// charAt function work accoding index 
+		// the data will print as per index 
+		for(int i=0;i<line1.length();i++)
+		{	
+			System.out.println(line1.charAt(i));
 		}
-		else{
-			System.out.println("both are not equal");
+		for(int i=0;i<line1.length();i++)
+		{	
+			System.out.print(line1.charAt(i));
 		}
+
 	}
 }
-			
-		
-		
