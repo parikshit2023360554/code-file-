@@ -1,0 +1,20 @@
+class index 
+{
+	int balance;
+	void index()
+	{
+		 balance = 10000;	
+	}
+	
+	void display()
+	{
+		System.out.println("balance="+balance);
+	}
+			
+	public static void main(String args[])
+	{
+		index scan = new index();
+		scan.display();
+		
+	}
+}
