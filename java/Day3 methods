@@ -15,5 +15,6 @@ class Student
     System.out.println("the roll no is  " + roll_no);
   }
   public static 
+}
     
     
