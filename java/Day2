@@ -17,7 +17,7 @@ class day2
 	public static void main(String args[])
 	{
 		day2 f = new day2();    //stored in heep memory 
-						                                 // creating object 
+		 // creating object 
 		
 		int x = 10;     // stack memory 
 		f.display();
