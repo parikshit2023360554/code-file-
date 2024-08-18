@@ -24,9 +24,9 @@ class array
 			{
 				System.out.print(data[i][j]+ " ");
 			}
-			System.out.println(); 
+			System.out.println();
 		}
 
-				
+
 	}
 }
