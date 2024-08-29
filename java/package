@@ -1,0 +1,23 @@
+> write a short note on lang package?
+it is a type of package which is already define in a java compile
+which help to impliment the datatype and it is import automatically
+when we use extention .java
+
+> arithmetic operation can performed
+> string
+> exception
+> Multithreading
+
+ class printstream(){
+  printf()
+  println()
+  print()
+}
+
+class System(){
+  out()
+  in()
+  system.out.printstream();
+  System.in.printstream();
+
+}

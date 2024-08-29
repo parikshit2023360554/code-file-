@@ -8,7 +8,7 @@ class area
 		double d = 0.150;
 		for(int i=0;i<41;i++)
 		{
-			
+
 			double c=d*i;
 			double f=r-c*c;
 			//System.out.println("inner square = "+f);
@@ -16,8 +16,6 @@ class area
 			double chord = 2 * Math.sqrt(f);
 			System.out.println("chord "+i+"=  "+ chord);
 			System.out.println("");
-			
 		}
 	}
 }
-		

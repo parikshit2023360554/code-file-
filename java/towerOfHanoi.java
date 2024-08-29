@@ -8,7 +8,7 @@ class towerOfHanoi{
     TOH(n-1,start,end,help);
     System.out.println("move "+n+" from "+ start+ " to "+end);
     TOH(n-1,help,start,end);
-  }
+  }qaa
 
   public static void main(String arg[]){
     Scanner sc = new Scanner(System.in);
