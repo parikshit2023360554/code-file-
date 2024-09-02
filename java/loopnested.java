@@ -1,15 +1,15 @@
 public class loopnested {
     public static void main(String args[]){
 
-//printing the pattern 
+//printing the pattern
 //                  * * * * *
 //                  * * * * *
 //                  * * * * *
 //                  * * * * *
-//using nested loop 
+//using nested loop
 
 
-        //outer loop 
+        //outer loop
         // for(int i=1;i<=4;i++){
             // System.out.println("");
 
@@ -17,15 +17,15 @@ public class loopnested {
             // for(int j=1;j<=5;j++){
                 // System.out.print(" *");
             // }
-        
 
 
-//printing the pattern 
+
+//printing the pattern
 //               * * * * *
 //               *       *
 //               *       *
 //               * * * * *
-        
+
 
 
         // int n=4;
@@ -46,10 +46,10 @@ public class loopnested {
 //printing the pattern
 
 
-//          * 
+//          *
 //          * *
 //          * * *
-//          * * * * 
+//          * * * *
 
 
 
@@ -68,8 +68,8 @@ public class loopnested {
 
 //          * * * *
 //          * * *
-//          * * 
-//          * 
+//          * *
+//          *
 
             // int n=4;
             // for(int i=1;i<=4;i++){
@@ -84,8 +84,8 @@ public class loopnested {
 
 //              *
 //            * *
-//          * * * 
-//        * * * * 
+//          * * *
+//        * * * *
 
             int  n =4;
             for(int i=1;i<=n;i++){
@@ -95,18 +95,10 @@ public class loopnested {
                 for(int j=1;j<=i;j++){
                     System.out.print("*");
                 }
-                System.out.println(""); 
-                
+                System.out.println("");
+
 
             }
 
-
-
- 
-
-    
-
-
-    
     }
 }

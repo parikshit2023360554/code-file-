@@ -13,19 +13,12 @@ class arraypac1
 		{
 			number[i]= scan.nextInt();
 		}
-		System.out.println("enter the no to search");
-		int num_search = scan.nextInt();
-		System.out.println("Searching.......");
-		
+		int sum =0 ;
+
 		for(int i=0;i<size;i++)
 		{
-			if(num_search==number[i])
-			{
-				System.out.println("number found....");
-				System.out.println("the no is at index---"+ i);
-			}
+			sum = sum+number[i];
 		}
+		System.out.println("the sum of the element of the array is "+sum);
 	}
 }
-
-		
