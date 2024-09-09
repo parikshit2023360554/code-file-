@@ -3,7 +3,7 @@ import java.util.*;
 class arraypac1
 {
 	public static void main(String arg[])
-	{
+ n	{
 		System.out.println("enter the no of size");
 		Scanner scan= new Scanner(System.in);
 		int size = scan.nextInt();
