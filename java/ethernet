@@ -1,0 +1,10 @@
+Link speed (Receive/Transmit):	1000/1000 (Mbps)
+Link-local IPv6 address:	fe80::eff6:dd00:819:fe8b%17
+IPv4 address:	10.10.7.24
+IPv4 DNS servers:	172.16.32.15 (Unencrypted)
+172.16.32.16 (Unencrypted)
+Primary DNS suffix:	su.edu.in
+Manufacturer:	Realtek
+Description:	Realtek PCIe GbE Family Controller
+Driver version:	10.71.312.2024
+Physical address (MAC):	7C-57-58-38-D7-D4
