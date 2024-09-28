@@ -37,8 +37,11 @@ public class box{
         System.out.println("widht--" + width);
         System.out.println("height--"+ height);
     }
+        
+    }
 
-
+    
+class SecondBox{
     public static void main(String arg []){
         box sc = new box(10.7,20.1,90.1);
         sc.showDimension();
@@ -52,14 +55,5 @@ public class box{
         sc.setDimension(length, width, height);
         sc.showDimension();
 
-
-
-
-
-        
-
-        
     }
-
-    
 }
