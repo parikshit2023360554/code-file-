@@ -1,3 +1,9 @@
+
+
+// default constructor 
+//  it is constructor with no parameter , if you do not provide any constructor in your class  
+// java automatically provide a default constructor
+
 class constructor{
     int num;
 
