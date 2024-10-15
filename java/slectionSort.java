@@ -1,6 +1,7 @@
 import java.util.Scanner;
 class slectionSort{
     public static void main(String[] args) {
+        //creating the scanner object 
         Scanner sc = new Scanner(System.in);
         System.out.println("enter the size of the array");
         int size = sc.nextInt();
