@@ -1,5 +1,305 @@
-.box{
-    border: 2px solid black;
-    width: 260px;
-    margin: 25% auto;
+body{
+    margin: 0;
+    padding:  0;
+    overflow: hidden;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+   
+    
+}
+
+.head{
+    background-color:#d4bbff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+.search{
+    padding: 15px 200px 15px 30px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-left: 8px;
+}
+
+.login{
+    padding: 10px 14px;
+    background: #242323;
+    color:white;
+    border-radius: 20px;
+}
+
+.blur{
+    filter: blur(5px);
+}
+
+.hidden{
+    display: none;
+}
+
+.login-form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 10; /* Ensure the login form is on top */
+}
+
+.login-form-user{
+    padding: 14px 24px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+     
+}
+
+.login-form-btn{
+    padding: 10px 20px;
+    background: #000;
+    color: white;;
+    border-radius: 10px;
+}
+
+.navbar{
+    gap: 40px;
+    padding: 12px 50px;
+}
+
+
+
+.dashboad{
+    height: 100%;
+    width: 100%;
+    background:rgb(243, 242, 242);
+}
+
+.name{
+    padding: 20px 40px;
+}
+
+.dashboad-dropdown{
+    padding: 10px 30px;
+    display: flex;
+    gap: 20px;
+
+}
+
+
+.dropbtn {
+    background-color:white;
+    color: black;
+    padding: 7px;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+
+.dropbtn1{
+    background-color:white;
+    color: black;
+    padding: 7px;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+
+  .totalbalance{
+    padding: 20px;
+    /* border: 1px solid black; */
+    width: 100%;
+    border-radius: 20px;
+
+  }
+
+  .mb{
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .counter{
+    display: flex;
+    gap: 15px;
+    padding: 15px 30px;
+    justify-content: space-between;
+  }
+
+.balance-per{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+
+.dashboad-highlight-transaction{
+    display: flex;
+    gap: 15px;
+    padding: 20px 30px;
+    
+}
+
+.highlight{
+    /* border: 1px solid black; */
+    padding: 20px;
+    background-color: white;
+    width: 25%;
+    border-radius: 20px;
+}
+
+.inner-highlight{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+.highlight-graph{
+    display: flex;
+    justify-content: space-between;
+}
+
+.graph-item {
+  justify-content: space-between; /* This ensures the item and percentage are spaced */
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+.graph-item a {
+  margin-right: 30px; /* Adjust this value for more/less space between the item and percentage */
+}
+.transaction{
+    width: 75%;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    padding: 10px;
+}
+.transaction1{
+    padding:  20px;
+}
+
+.transaction2{
+    padding: 10px 20px;
+    display:flex ;
+    justify-content: space-between;
+    width: 75%;
+    font-weight: bold;
+}
+
+.transaction3{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.add{
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+
+}
+
+.add-btn{
+    background: #000;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+.input-area{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 10; /* Ensure the login form is on top */
+}
+
+.input-style{
+    padding: 14px 24px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px; 
+}
+
+
+.add-button{
+    background: #000;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
 }

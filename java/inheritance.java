@@ -15,7 +15,7 @@ if we want want to give a multiple inheritance to java class it will give error 
 interface in java to give a multiple inheritance to a single class
 defination ========>
 it is just like a adstract class in which all the method are by default abstract and all the data member
- are static andg final by default
+ are static and final by default
  */
 /*
 class -> class  : extends
@@ -24,17 +24,15 @@ interface -> interface : extends
 */
 
 // =============================================code===============================================================
-interface First{
-  public void m1(){
-
-  }
+interface first
+{
+  public void m1();
 }
-interface second{
-  public void m2(){
-
-  }
+interface second
+{
+  public void m2();
 }
-class Third impliments  first , second{
+class Third implements  first , second{
   public void m1(){
     System.out.println("i am into m1 method");
   }

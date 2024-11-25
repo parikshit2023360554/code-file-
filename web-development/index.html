@@ -1,19 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Html basic</title>
-    <link rel="icon" type="image/x-icon" href="/code-file-/web-development/home.png">
-    <link rel="stylesheet" href="/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Dashboard</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="box">
-        <div class="box1">
-            hello i am here 
+  <div class="main-head">
+    <div class="head">
+      <div class="logo">
+          <img src="./pics/image-removebg-preview (2).png" alt="" width="100px">
+      </div>
+      <div class="search-container">
+          <img src="./pics/search.png" alt="Search Icon" class="search-icon">
+          <input type="text" placeholder="search transaction" class="search">
+      </div>
+      
+      <div class="flex" style="align-items: center;  gap: 30px;">
+          <div class="notification">
+              <img src="./pics/notification-bell.png" alt="" width="30px">
+          </div>
+          <div class="user flex" style="align-items: center; gap: 10px;">
+              <div class="user-logo "><img src="./pics/user (1).png" alt="logo" width="40px"></div>
+              <button class="login" onclick="popuplogin()">Login</button>
+              <!-- <a>Lorem, ipsum.</a> -->
+          </div>
+      </div>
+    </div>
+    <div class="name" id="username" style="font-weight: bold; font-size:large;"></div>
+  
+              
+      <div class="navbar flex">
+        <div><img src="./pics/home-agreement.png" alt="" width="15px"><a>Dashboard</a></div>
+        <div><img src="./pics/activity.png" alt="" width="15px"><a>Activity</a></div>
+        <div><img src="./pics/help.png" alt="" width="15px"><a>Help</a></div>
+      </div>
+  
+  
+      <div class="counter">
+        <!-- div1 -->
+        <div class="totalbalance" style="background-color:#e4d9f7;">
+            <div class="mb">
+                <a class="">Total balance</a>
+            </div>
+            <div class="" style="font-size:x-large;">Rs 0.0</div>
+        </div>
+        <!-- div2 -->
+        <div class="totalbalance" style="background-color: rgb(250, 203, 210);">
+            <div class="mb">
+                <a class="">Total Saving</a>
+                <a class="balance-per">0%</a>
+            </div>
+            <div class="" style="font-size:x-large;">Rs 0.00</div>
+        </div>
+        <!-- div3 -->
+        <div class="totalbalance" style="background-color:white;">
+            <div class="mb">
+                <a>Todays's Investment</a>
+                <a class="balance-per">0%</a>
+            </div>
+            <div style="font-size: x-large;">Rs 0.0</div>
         </div>
     </div>
+  
+      <div class="dashboad">
+        <div class="name">Expense Dashboard</div>
+  
+        <!-- Highlight Section with Graph and Percentage List -->
+        <div class="dashboad-highlight-transaction">
+          <div class="highlight">
+            <div class="inner-highlight">
+              <a style="font-weight: bold;">Expense Distribution</a>
+              <a href="#">See all</a>
+            </div>
+            <div class="highlight-graph">
+              <canvas id="expenseChart"></canvas>
+              <!-- Percentage List -->
+              <div id="percentageList" style="padding-left: 10px; width: 50%;">
+                <ul id="percentageInfo"></ul>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Transaction Section -->
+          <div class="transaction">
+            <div class="transaction1"><a>Transaction List</a></div>
+            <div class="transaction2"><a>Category</a><a>Amount</a></div>
+            <div id="transactionList" class="transaction3-main" style="width: 75%;"></div>
+          </div>
+  
+          <div style="width: 50%;">
+            <div style="font-size: small; color:rgb(143, 143, 143)">Spending</div>
+            <div style="font-weight:600; margin-bottom:10px;">Rs 1200</div>
+            <!-- Graph Item Section with Space Between Item and Percentage -->
+            <div class="graph-item" id="graphItemSection"></div>
+          </div>
+  
+        <!-- Input Form for Adding Items -->
+        <div style="padding: 20px;" class="input-area hidden">
+          <input type="number" id="totalAmount" placeholder="Enter total amount" class="input-style">
+          <input type="text" id="category" placeholder="e.g., Food" class="input-style">
+          <input type="number" id="amount" placeholder="e.g., 100" class="input-style">
+          <button onclick="addItem()" class="add-button">Add Item</button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="add">
+      <button class="add-btn" onclick="displayInput()">Add</button>
+    </div>
+  
+  </div>
+  <div style="padding: 20px;" class="input-area hidden">
+    <input type="number" id="totalAmount" placeholder="Enter total amount" class="input-style">
+    <input type="text" id="category" placeholder="items" class="input-style">
+    <input type="number" id="amount" placeholder=" amount" class="input-style">
+    <button onclick="addItem()" class="add-button">Add Item</button>
+  </div>
 
-</body>
+  <div class="login-form hidden">
+    <input type="text" placeholder="Username" class="login-form-user" id="helpgetname"> 
+    <input type="password" placeholder="Password"  class="login-form-user">
+    <div><button class="login-form-btn" onclick="hidelogin()">login</button></div>
+</div>
+
+  <script src="./index.js"></script>
 </body>
 </html>
