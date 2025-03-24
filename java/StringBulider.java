@@ -4,7 +4,7 @@
  */
 
 
-public class StringBulider extends StringBuilder {
+public class StringBulider {
 
     public StringBulider() {
     }

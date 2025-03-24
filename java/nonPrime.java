@@ -6,4 +6,9 @@
 
 class nonPrime {
 
+    public void getData() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getData'");
+    }
+
 }
